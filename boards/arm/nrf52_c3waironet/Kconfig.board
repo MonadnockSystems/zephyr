@@ -1,0 +1,10 @@
+# Kconfig - nRF52 SparkFun board configuration
+#
+# Copyright (c) 2016 Linaro Limited.
+#
+# SPDX-License-Identifier: Apache-2.0
+
+
+config BOARD_NRF52_C3WAIRONET
+	bool "nRF52 C3Wireless Aironet EM"
+	depends on SOC_NRF52832_QFAA

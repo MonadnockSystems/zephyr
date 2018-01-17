@@ -1,0 +1,30 @@
+# Kconfig - nRF52 Sparkfun board configuration
+#
+# Copyright (c) 2018 Shawn Nock <shawn@monadnock.ca>
+# Copyright (c) 2016 Nordic Semiconductor ASA
+#
+# SPDX-License-Identifier: Apache-2.0
+
+if BOARD_NRF52_C3WAIRONET
+
+config BOARD
+	default nrf52_c3waironet
+
+if GPIO_NRF5
+
+config GPIO_NRF5_P0
+	default y
+
+endif # GPIO_NRF5
+
+if UART_NRF5
+
+config UART_NRF5_GPIO_TX_PIN
+	default 13
+
+config UART_NRF5_GPIO_RX_PIN
+	default 16
+
+endif # UART_NRF5
+
+endif # BOARD_NRF52_C3WAIRONET
